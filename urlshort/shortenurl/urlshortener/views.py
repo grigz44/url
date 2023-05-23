@@ -70,7 +70,7 @@ from pyshorteners.exceptions import ShorteningErrorException
 def shorten_url(request):
     if request.method == 'POST':
         original_url = request.POST.get('original_url')
-        type_bitly = pyshorteners.Shortener(api_key='034d67ad83e5498696b59d32cdeaef906abdc39d')
+        type_bitly = pyshorteners.Shortener(api_key='########')
 
         try:
             short_url = type_bitly.bitly.short(original_url)
